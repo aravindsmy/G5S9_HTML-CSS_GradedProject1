@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script>
+        function clicked(id,classname){
+            document.getElementById(id).classList.remove(classname)
+            document.getElementById(id).classList.add('focused')
+        }
+    </script>
+</head>
+<body>
+            <header>
+                <h2>Pharmacy</h2>
+            </header>
+
+        <div class="navbar">
+            <div class="home">
+                <button class="nav-btn">Home</button>       
+            </div>
+
+            <div class="nav">
+
+                <button class="nav-btn">Our Medicine</button>
+
+                <div class="nav-content">
+                    <div class="content-left">
+                        <ul>
+                            <li><span class="material-symbols-outlined">sick</span></li>
+                            <li><span class="material-symbols-outlined">humerus_alt</span></li>
+                            <li><span class="material-symbols-outlined">coronavirus</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-right">
+                        <ul>
+                            <li><a href="#">Fever</a></li>
+                            <li><a href="#">Muscle Pains</a></li>
+                            <li><a href="#">Cold & Cough</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav">
+
+                    <button class="nav-btn">Health Care</button>
+                <div class="nav-content">
+                    <div class="content-left">
+                        <ul>
+                            <li><span class="material-symbols-outlined">child_care</span></li>
+                            <li><span class="material-symbols-outlined">self_care</span></li>
+                            <li><span class="material-symbols-outlined">home_repair_service</span></li>
+                            <li><span class="material-symbols-outlined">personal_injury</span></li>
+                            <li><span class="material-symbols-outlined">pets</span></li>
+                        </ul>
+                    </div>
+                    <div class="content-right">
+                        <ul>
+                            <li><a href="#">Baby Care</a></li>
+                            <li><a href="#">Skin Care</a></li>
+                            <li><a href="#">Home Care</a></li>
+                            <li><a href="#">Personal Care</a></li>
+                            <li><a href="#">Pet Care</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ltest">
+                <button class="nav-btn" type="button" onclick="location.href='form.html'">Lab Test</button>  
+            </div>
+        </div>
+
+        <div class="img-container">
+            <div class="offerimg"></div>
+        </div>
+
+        <div class="prod-container">
+            <div class="covid-care">
+                <h4>Covid Care</h4>
+                <div class="products">
+                    <div class="c-prod" id="c-one">
+                        <ul>
+                            <li><span>Covid Test Kit</span></li>
+                            <li><img src="src\Images\Products\c1.jpg" alt="covid-test-kit"></li>
+                            <li>Rs. 40</li>
+                            <li><span>Offer: Rs. 30/-</span></li>
+                            <li><button class="covid-add-cart" type="button" onclick="clicked('c-one','c-prod')">Add to Cart</button></li>
+                        </ul>
+                    </div>
+                    <div class="c-prod" id="c-two">
+                        <ul>
+                            <li><span>Covid Essentials</span></li>
+                            <li><img src="src\Images\Products\c2.jpg" alt="covid-essentials"></li>
+                            <li>Rs. 240</li>
+                            <li><span>Offer: Rs. 170/-</span></li>
+                            <li><button class="covid-add-cart" type="button" onclick="clicked('c-two','c-prod')">Add to Cart</button></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="c-prod" id="c-three">
+                        <ul>
+                            <li><span>Sanitizer Bottle</span></li>
+                            <li><img src="src\Images\Products\c3.jpg" alt="sanitizer"></li>
+                            <li>Rs. 99</li>
+                            <li><span>Offer: Rs. 87/-</span></li>
+                            <li><button class="covid-add-cart" type="button" onclick="clicked('c-three','c-prod')">Add to Cart</button></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="c-prod" id="c-four">
+                        <ul>
+                            <li><span>Mask</span></li>
+                            <li><img src="src\Images\Products\c4.jpg" alt="mask"></li>
+                            <li>Rs. 40</li>
+                            <li><span>Offer: Rs. 30/-</span></li>
+                            <li><button class="covid-add-cart" type="button" onclick="clicked('c-four','c-prod')">Add to Cart</button></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="diabetes-care">
+                <h4>Diabetes Care</h4>
+                <div class="products">
+                    <div class="d-prod" id="d-one">
+                        <ul>
+                            <li><span>Tablet</span></li>
+                            <li><img src="src\Images\Products\d1.jpg" alt="tablet"></li>
+                            <li>Rs. 45</li>
+                            <li><span>Offer: Rs. 30/-</span></li>
+                            <li><button class="diab-add-cart" type="button" onclick="clicked('d-one','d-prod')">Add to Cart</button></li>
+                        </ul>
+                    </div>
+                    <div class="d-prod" id="d-two">
+                        <ul>
+                            <li><span>Sugar Free</span></li>
+                            <li><img src="src\Images\Products\d2.jpg" alt="sugarfree"></li>
+                            <li>Rs. 45</li>
+                            <li><span>Offer: Rs. 30/-</span></li>
+                            <li><button class="diab-add-cart" type="button" onclick="clicked('d-two','d-prod')">Add to Cart</button></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="d-prod" id="d-three">
+                        <ul>
+                            <li><span>ToothPaste</span></li>
+                            <li><img src="src\Images\Products\d3.jpg" alt="toothpaste"></li>
+                            <li>Rs. 45</li>
+                            <li><span>Offer: Rs. 30/-</span></li>
+                            <li><button class="diab-add-cart" type="button" onclick="clicked('d-three','d-prod')">Add to Cart</button></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="d-prod" id="d-four">
+                        <ul>
+                            <li><span>Biscuts</span></li>
+                            <li><img src="src\Images\Products\d4.png" alt="biscuts"></li>
+                            <li>Rs. 45</li>
+                            <li><span>Offer: Rs. 30/-</span></li>
+                            <li><button class="diab-add-cart" type="button" onclick="clicked('d-four','d-prod')">Add to Cart</button></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+       <p>@copyright. Only for demonstration purposes</p>
+    </footer>
+    
+</body>
+</html>

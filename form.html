@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="form-style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#submit').click(function() {
+              checked = $("input[type=checkbox]:checked").length;
+        
+              if(!checked) {
+                alert("You must check at least one checkbox.");
+                return false;
+              }        
+            });
+        });
+    </script>
+</head>
+<body>
+           
+        <div class="form" id="form">
+            <form method="GET" id="labtest" action="home.html">
+                <div class="form-fields">
+                    <div class="section s-one">
+                        <div class="heading"><h3>Contact Details</h3></div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="fullname" class="label">Full Name</label>
+                                <input type="text" class="form-input" name="fullName" id="fullname" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientid" class="label">Patient ID</label>
+                                <input type="text" class="form-input" name="patientid" id="patientid" placeholder="Patient ID if exists">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact" class="label">Contact No</label>
+                                <input type="tel" class="form-input" name="number" id="number" placeholder="1231231234" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="label">Email ID</label>
+                                <input type="email" class="form-input" name="email" id="email" placeholder="abcd@xyz.com" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section s-two">
+                        <div class="heading"><h3>Address Details</h3></div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="houseno" class="label">House Number</label>
+                                <input type="text" class="form-input" name="houseno" id="hsno" placeholder="House No" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="street" class="label">Street</label>
+                                <input type="text" class="form-input" name="street" id="street" placeholder="Street name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="area" class="label">Area</label>
+                                <input type="text" class="form-input" name="area" id="area" placeholder="Area name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="district" class="label">District</label>
+                                <select name="district" id="district" required>
+                                    <option value="" selected="selected">Choose</option>
+                                    <option value="Abiramam">Abiramam</option>
+                                    <option value="Adirampattinam">Adirampattinam</option>
+                                    <option value="Aduthurai">Aduthurai</option>
+                                    <option value="Alagapuram">Alagapuram</option>
+                                    <option value="Alandur">Alandur</option>
+                                    <option value="Alanganallur">Alanganallur</option>
+                                    <option value="Alangayam">Alangayam</option>
+                                    <option value="Alangudi">Alangudi</option>
+                                    <option value="Alangulam">Alangulam</option>
+                                    <option value="Alappakkam">Alappakkam</option>
+                                    <option value="Alwa Tirunagari">Alwa Tirunagari</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Gandhi Nagar">Gandhi Nagar</option>
+                                    <option value="Gangaikondan">Gangaikondan</option>
+                                    <option value="Gangavalli">Gangavalli</option>
+                                    <option value="Gingee">Gingee</option>
+                                    <option value="Gobichettipalayam">Gobichettipalayam</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section s-three">
+                        <div class="heading"><h3>Choose the Test Type</h3></div>
+                        <div class="chckmsg">(Check atleast one box without fail)</div>
+                        <div class="test-type" id="chck-test">
+                            <ul>
+                                <li><input type="checkbox" name="cbc" id="cbc" value="CBC">
+                                    <label for="cbc">CBC</label></li>
+                                <li><input type="checkbox" name="completeurine" id="comuri" value="Complete Urine">
+                                    <label for="comuri">Complete Urine</label></li>
+                                <li><input type="checkbox" name="lipid" id="lipid" value="Lipid Profile">
+                                    <label for="lipid">Lipid Profile</label></li>
+                                <li><input type="checkbox" name="tsh" id="tsh" value="Thyroid Stimulating Hormone(TSH)">
+                                    <label for="tsh">Thyroid Stimulating Hormone(TSH)</label></li>
+                                <li><input type="checkbox" name="glucose" id="glucose" value="Glucose Test">
+                                    <label for="glucose">Glucose Test</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section s-four">
+                        <div class="heading"><h3>Do you want a hard copy of the report also?</h3></div>
+                            <div class="hardcopy">
+                                <input type="radio" name="YesNo" id="yes" value="Yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="YesNo" id="no" value="No">
+                                <label for="no">No</label>
+                            </div>
+                    </div>
+                    <div class="section s-five">
+                        <div class="heading"><h3>Select Your Comfortable Date and Time</h3></div>
+                            <div class="datetime">
+                                <label for="date">Date</label>
+                                <input type="date" name="date" id="date" min="2000-01-02" required>
+                                <label for="time">Time</label>
+                                <input type="time" name="time" id="time" required>
+                            </div>
+                    </div>
+                    <div class="section actions">
+                        <input type="reset" value="Reset" id="reset">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </div>
+            </form>
+            <img src="src/Images/Lab-Test/lab-test.jpg" alt="Lab-test">
+        </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.s-one{grid-area: s-one;}
+.s-two{grid-area: s-two;}
+.s-three{grid-area: s-three;}
+.s-four{grid-area: s-four;}
+.s-five{grid-area: s-five;}
+.actions{grid-area: actions;}
+.image{grid-area: image;}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.form{
+    margin-top: 80px;
+    width: 70%;
+    max-width: 1800px;
+    height: 80%;
+    max-height: 700px;
+    border-radius: 3px;
+    display: flex;
+}
+form{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.form{
+    filter: blur(0.4px);
+    box-shadow:
+    /*bottom shadow*/
+    0px 20px 20px 20px rgba(0,0,0,0.2),
+    0px 5px 10px 10px rgba(0,0,0,0.2),
+    /*long bottom shadow*/
+    0px 70px 50px rgba(0,0,0,0.4),
+    /*right shadow*/
+    30px 50px 50px 20px rgba(0,0,0,0.2),
+    /*left shadow*/
+    -30px 50px 50px rgba(0,0,0,0.2);
+    overflow: auto;
+}
+
+.form-fields{
+    display: block;
+}
+
+
+.section{
+    margin: 5px;
+    padding: 1px;
+}
+
+img{
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 700px;
+    min-height: 400px;
+
+    /* Center and scale the image nicely */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+}
+
+.form #labtest .form-fields .section h3{
+    margin: 10px;
+}
+
+.form #labtest .form-fields .section .row{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+}
+
+.form #labtest .form-fields .section .row .form-group{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    width: calc(100% / 2 - 25px);
+}
+
+.form #labtest .form-fields .section .row .form-group .label{
+    display: flex;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.form #labtest .form-fields .section .row .form-group input{
+    height: 40px;
+    width: 95%;
+    min-width: 50px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 15px;
+    border-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.form #labtest .form-fields .section .row .form-group #district{
+    width: 65%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 15px;
+    border-bottom: 2px;
+}
+
+.form #labtest .form-fields .section .chckmsg{
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.form #labtest .form-fields .section #chck-test{
+    margin-top: 10px;
+    margin-left: 14px;
+    justify-content: space-between;
+}
+
+.form #labtest .form-fields .section .hardcopy{
+    margin-left: 14px;
+    justify-content: space-between;
+}
+
+.form #labtest .form-fields .section .hardcopy label, .form #labtest .form-fields .section .hardcopy input{
+    margin-left: 5px;
+    width: 5%;
+    height: 15px;
+}
+
+.form #labtest .form-fields .section .datetime{
+    margin-left: 14px;
+    justify-content: space-between;
+
+}
+
+.form #labtest .form-fields .section .datetime label, .form #labtest .form-fields .section .datetime input{
+    margin-left: 8px;
+    width: 35%;
+    height: 35px;
+}
+
+.form #labtest .form-fields .section .datetime input{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 15px;
+    border-bottom: 2px;
+}
+
+#reset, #submit {
+    margin: 25px;
+    margin-left: 35px;
+    appearance: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #2f80ed;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2),
+        0px 2px 3px 3px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+  
+#reset:hover, #submit:hover {
+    background-color: #1366d6;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+  
+#reset:hover:after, #submit:hover:after  {
+    opacity: .5;
+}
+  
+#reset:active, #submit:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+  
+#reset:active:after, #submit:active:after {
+    opacity: 1;
+}
+  
+@media (min-width: 250px) {
+    #reset, #submit {
+        padding: 14px 22px;
+        width: 176px;
+    }
+}

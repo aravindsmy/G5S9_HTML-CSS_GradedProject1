@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #FDFCFB, #E3D2C4);
+}
+
+header{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: #025582;
+    padding: 5px;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: #141414;
+    color: #fff;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: #048cd4;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+}
+
+.navbar .nav{
+    width: 150px;
+    height: 60px;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.navbar .home button, .ltest button, .nav button{
+    border: none;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+    height: 60px;
+    border: none;
+    background: #048cd4;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.navbar .home button:hover,.ltest button:hover, .nav button:hover{
+    background: #a4d4fc;
+}
+
+.navbar .nav .nav-content{
+    width: 180px;
+    display: none;
+    background: #a9bcd1;
+    padding: 7px 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navbar .nav .nav-content .content-left li{
+    color: #141414;
+    margin-bottom: 6px;
+    font-size: medium;
+
+}
+
+.navbar .nav .nav-content .content-right{
+    padding: 5px 7px;
+}
+
+.navbar .nav .nav-content .content-right li{
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.navbar .nav .nav-content .content-right li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #141414;
+}
+
+.navbar .nav .nav-content .content-right li:hover{
+    background: #d4e1ee;
+}
+
+.nav:hover .nav-content{
+    display: flex;
+}
+
+.img-container{
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;   
+}
+
+.offerimg{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 400px;
+    min-width: 800px;
+    min-height: 200px;
+    border: 2px solid steelblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: offerAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.prod-container{
+    margin: 2%;
+    padding: 2px;
+    border-top: 2px solid steelblue;
+}
+
+.covid-care, .diabetes-care{
+    flex-wrap: wrap;
+    margin: 2%;
+    padding: 2px;
+}
+
+.covid-care h4, .diabetes-care h4{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.covid-care .products, .diabetes-care .products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 30%;
+}
+
+.covid-care .products .c-prod, .diabetes-care .products .d-prod{
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    max-width: 230px;
+    min-width: 190px;
+    width: 15%;
+    height: 290px;
+    margin-top: 12px;
+    padding: 12px;
+    background: #c5d2e0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(199, 199, 199, 0.452);
+}
+
+.covid-care .products #c-one li, #c-two li, #c-three li, #c-four li, .diabetes-care .products #d-one li, #d-two li, #d-three li, #d-four li{
+    font-size: small;
+    margin: 5px;
+}
+
+.covid-care .products  #c-one span, #c-two span, #c-three span, #c-four span, .diabetes-care .products #d-one span, #d-two span, #d-three span, #d-four span{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.covid-care .products .c-prod button, .diabetes-care .products .d-prod button{
+    width: 95%;
+    max-width: 140px;
+    background: #d4e1ee;
+    border: 1px solid #025582;
+    border-radius: 2px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.covid-care .products #c-one:hover, #c-two:hover, #c-three:hover, #c-four:hover, .diabetes-care .products #d-one:hover, #d-two:hover, #d-three:hover, #d-four:hover{
+    width: 25%;
+    height: 300px;
+    box-shadow: 8px 8px 8px 8px rgba(199, 199, 199, 0.452);
+}
+
+.products .focused{
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    width: 15%;
+    min-width: 190px;
+    max-width: 230px;
+    height: 290px;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(199, 199, 199, 0.452);
+    background: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+}
+
+.covid-care .products .focused button, .diabetes-care .products .focused button{
+    width: 15%;
+    background: #d4e1ee;
+    border: 1px solid #025582;
+    border-radius: 2px;
+    font-weight: bold;
+    height: 30px;
+}
+
+img{
+    float: left;
+    width: 100%;
+    height: 120px;
+    border-radius: 3px;
+}
+
+@keyframes offerAnimation{
+    0%{background-image: url('src/Images/Animation/ani5.jpg');}
+    20%{background-image: url('src/Images/Animation/ani1.jpg');}
+    40%{background-image: url('src/Images/Animation/ani2.png');}
+    60%{background-image: url('src/Images/Animation/ani3.jpg');}
+    80%{background-image: url('src/Images/Animation/ani4.jpg');}
+    100%{background-image: url('src/Images/Animation/ani5.jpg');}
+}
+
+@media screen and (max-width: 1500px) {
+    .covid-care .products .c-prod, .diabetes-care .products .d-prod{
+        width: 100%;
+    }
+    
+}
